@@ -537,17 +537,6 @@ public class VolumeDialogImpl implements VolumeDialog,
                 animateExpandedRowsChange(!mExpanded);
                 mExpanded = !mExpanded;
             });
-            mSettingsIcon.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View v) {
-                    Intent soundSettings = new Intent(Settings.ACTION_SOUND_SETTINGS);
-                    soundSettings.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                    dismissH(DISMISS_REASON_SETTINGS_CLICKED);
-                    Dependency.get(ActivityStarter.class).startActivity(soundSettings,
-                            true /* dismissShade */);
-                    return true;
-                }
-            });
         }
     }
 
