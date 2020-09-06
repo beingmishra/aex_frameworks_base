@@ -20,6 +20,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:theme="?android:attr/alertDialogTheme"
+    android:layout_gravity="bottom"
     android:paddingTop="8dp"
     android:paddingLeft="?android:attr/dialogPreferredPadding"
     android:paddingRight="?android:attr/dialogPreferredPadding">
